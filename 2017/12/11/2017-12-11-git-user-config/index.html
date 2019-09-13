@@ -124,7 +124,7 @@
 
 
 
-  <title>归档 | gloryofme</title>
+  <title>git全局和局部用户信息配置 | gloryofme</title>
   
 
 
@@ -143,7 +143,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -217,107 +217,177 @@
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+    
+
+  
+
   
   
   
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
-
-      <span class="archive-page-counter">
-        
-        
-        
-          
-        
-        嗯..! 目前共计 4 篇日志。 继续努力。
-      </span>
-
-      
-
-        
-        
-        
-
-        
-          
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2019">2019</h1>
-          </div>
-        
-        
-
-        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/11/2017-12-11-git-user-config/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="gloryfome">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="gloryofme">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2019/09/12/My-New-Post/" itemprop="url">
-              
-                <span itemprop="name">My New Post</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">git全局和局部用户信息配置</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-09-12T11:25:22+08:00" content="2019-09-12">
-          09-12
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-11T08:30:00+08:00">2017-12-11</time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
 
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/09/12/hello-world/" itemprop="url">
-              
-                <span itemprop="name">Hello World</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-09-12T11:19:13+08:00" content="2019-09-12">
-          09-12
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
 
+      
+        <h1 id="必要性"><a href="#必要性" class="headerlink" title="必要性"></a>必要性</h1><p>如果你的电脑上项目代码是从多个不同的代码托管网站上clone下来的，并且对应的用户名和邮箱信息不是都一样的，那么你就可以通过为你不同的项目配置不同的用户信息，保证push代码的用户信息是正确的。</p>
+<h1 id="配置方法"><a href="#配置方法" class="headerlink" title="配置方法"></a>配置方法</h1><p>我们可以为每一个项目都单独配置一下用户信息，但是往往你的电脑上大部分项目都是从一个代码托管网站上clone下来的，比如公司的项目，只有部分项目是从其他的网站上clone的，比如github，那么我们可以配置全局和局部的用户信息。</p>
+<h3 id="全局配置"><a href="#全局配置" class="headerlink" title="全局配置"></a>全局配置</h3><p>用户信息配置查看命令：git config –list，包含全局和局部配置。</p>
+<p>全局配置用户信息命令：git config –global 具体例子如下：</p>
+<pre><code>git config --global user.name &quot;xxxx&quot;
+git config --global user.email &quot;xxxx&quot;</code></pre><p>全局配置文件的路径：win7 -&gt; C：/Users/xxxxxx/.gitconfig<br><br>配置文件内容例子如下：</p>
+<pre><code>[user]
+    name = xxxx
+    email = xxxx@xx.com
+[core]
+    excludesfile = C:\\Users\\xxxx\\Documents\\gitignore_global.txt</code></pre><h3 id="局部配置"><a href="#局部配置" class="headerlink" title="局部配置"></a>局部配置</h3><p>局部配置用户信息命令：git config 具体例子如下：</p>
+<pre><code>git config user.name &quot;xxxx&quot;
+git config user.email &quot;xxxx&quot;</code></pre><p>局部配置文件的路径：项目根目录下的.git文件夹下，例如：xxx/.git/config<br><br>配置文件内容例子如下：</p>
+<pre><code>[core]
+    repositoryformatversion = 0
+    filemode = false
+    bare = false
+    logallrefupdates = true
+    symlinks = false
+    ignorecase = true
+    hideDotFiles = dotGitOnly
+[remote &quot;origin&quot;]
+    url = git@github.com:gloryofme/gloryofme.github.io.git
+    fetch = +refs/heads/*:refs/remotes/origin/*
+[branch &quot;master&quot;]
+    remote = origin
+    merge = refs/heads/master
+[user]
+    name = gloryofme
+    email = gloryofme@163.com</code></pre>
+      
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/git/" rel="tag"># git</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/12/10/2017-12-10-git-ssh-key-config/" rel="next" title="SSH免密配置">
+                <i class="fa fa-chevron-left"></i> SSH免密配置
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/09/12/hello-world/" rel="prev" title="Hello World">
+                Hello World <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -325,6 +395,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -345,8 +419,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -397,6 +480,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#必要性"><span class="nav-number">1.</span> <span class="nav-text">必要性</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#配置方法"><span class="nav-number">2.</span> <span class="nav-text">配置方法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#全局配置"><span class="nav-number">2.0.1.</span> <span class="nav-text">全局配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#局部配置"><span class="nav-number">2.0.2.</span> <span class="nav-text">局部配置</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -526,6 +625,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.0"></script>
+
+
 
   
 
