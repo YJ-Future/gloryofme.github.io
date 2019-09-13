@@ -75,18 +75,18 @@
 
 
 
-<meta name="description" content="description">
+<meta name="description" content="关于我想学很多东西…不断尝试学习原理、悟道…BUPT -&amp;gt; JD">
 <meta name="keywords" content="keywords">
 <meta property="og:type" content="website">
-<meta property="og:title" content="categories">
-<meta property="og:url" content="http://yoursite.com/categories/index.html">
+<meta property="og:title" content="about">
+<meta property="og:url" content="http://yoursite.com/about/index.html">
 <meta property="og:site_name" content="gloryofme">
-<meta property="og:description" content="description">
+<meta property="og:description" content="关于我想学很多东西…不断尝试学习原理、悟道…BUPT -&amp;gt; JD">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-09-13T02:16:20.369Z">
+<meta property="og:updated_time" content="2019-09-13T02:25:28.688Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="categories">
-<meta name="twitter:description" content="description">
+<meta name="twitter:title" content="about">
+<meta name="twitter:description" content="关于我想学很多东西…不断尝试学习原理、悟道…BUPT -&amp;gt; JD">
 
 
 
@@ -118,7 +118,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/categories/">
+  <link rel="canonical" href="http://yoursite.com/about/">
 
 
 
@@ -170,7 +170,7 @@
       </a>
     </div>
       
-        <p class="site-subtitle">subtitle</p>
+        <p class="site-subtitle">在路上... 珍惜当下... 爱自己...</p>
       
   </div>
 
@@ -372,38 +372,15 @@
 
       
         
-          
-            <h1 id="必要性"><a href="#必要性" class="headerlink" title="必要性"></a>必要性</h1><p>如果你的电脑上项目代码是从多个不同的代码托管网站上clone下来的，并且对应的用户名和邮箱信息不是都一样的，那么你就可以通过为你不同的项目配置不同的用户信息，保证push代码的用户信息是正确的。</p>
+          <h1 id="必要性"><a href="#必要性" class="headerlink" title="必要性"></a>必要性</h1><p>如果你的电脑上项目代码是从多个不同的代码托管网站上clone下来的，并且对应的用户名和邮箱信息不是都一样的，那么你就可以通过为你不同的项目配置不同的用户信息，保证push代码的用户信息是正确的。</p>
 <h1 id="配置方法"><a href="#配置方法" class="headerlink" title="配置方法"></a>配置方法</h1><p>我们可以为每一个项目都单独配置一下用户信息，但是往往你的电脑上大部分项目都是从一个代码托管网站上clone下来的，比如公司的项目，只有部分项目是从其他的网站上clone的，比如github，那么我们可以配置全局和局部的用户信息。</p>
-<h3 id="全局配置"><a href="#全局配置" class="headerlink" title="全局配置"></a>全局配置</h3><p>用户信息配置查看命令：git config –list，包含全局和局部配置。</p>
-<p>全局配置用户信息命令：git config –global 具体例子如下：</p>
-<pre><code>git config --global user.name &quot;xxxx&quot;
-git config --global user.email &quot;xxxx&quot;</code></pre><p>全局配置文件的路径：win7 -&gt; C：/Users/xxxxxx/.gitconfig<br><br>配置文件内容例子如下：</p>
-<pre><code>[user]
-    name = xxxx
-    email = xxxx@xx.com
-[core]
-    excludesfile = C:\\Users\\xxxx\\Documents\\gitignore_global.txt</code></pre><h3 id="局部配置"><a href="#局部配置" class="headerlink" title="局部配置"></a>局部配置</h3><p>局部配置用户信息命令：git config 具体例子如下：</p>
-<pre><code>git config user.name &quot;xxxx&quot;
-git config user.email &quot;xxxx&quot;</code></pre><p>局部配置文件的路径：项目根目录下的.git文件夹下，例如：xxx/.git/config<br><br>配置文件内容例子如下：</p>
-<pre><code>[core]
-    repositoryformatversion = 0
-    filemode = false
-    bare = false
-    logallrefupdates = true
-    symlinks = false
-    ignorecase = true
-    hideDotFiles = dotGitOnly
-[remote &quot;origin&quot;]
-    url = git@github.com:gloryofme/gloryofme.github.io.git
-    fetch = +refs/heads/*:refs/remotes/origin/*
-[branch &quot;master&quot;]
-    remote = origin
-    merge = refs/heads/master
-[user]
-    name = gloryofme
-    email = gloryofme@163.com</code></pre>
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/12/11/2017-12-11-git-user-config/" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -540,40 +517,18 @@ git config user.email &quot;xxxx&quot;</code></pre><p>局部配置文件的路�
 
       
         
-          
-            <p>本文首先讲一下必要性，然后简单介绍配置步骤，其中配置多网站免密可选。</p>
+          <p>本文首先讲一下必要性，然后简单介绍配置步骤，其中配置多网站免密可选。</p>
 <h1 id="必要性"><a href="#必要性" class="headerlink" title="必要性"></a>必要性</h1><ol>
 <li>在使用git进行push到远程仓库的时候会进行身份验证，需要输入用户名和密码，如果每次push都需要我们这样做重复可能很麻烦的事儿，会降低消息。</li>
 <li>github类似的一些代码托管网站一般都提供了ssh key管理的功能，可以登录到网站，添加ssh公钥key实现免密登录。</li>
 </ol>
-<h1 id="配置步骤"><a href="#配置步骤" class="headerlink" title="配置步骤"></a>配置步骤</h1><ol>
-<li>本地生成ssh公钥和密钥</li>
-<li>拷贝公钥到网站</li>
-<li>配置项目远程仓库url</li>
-<li>配置多个git托管网站ssh key</li>
-</ol>
-<h2 id="生成密钥"><a href="#生成密钥" class="headerlink" title="生成密钥"></a>生成密钥</h2><p>通过命令：ssh-keygen -t rsa -C “<a href="mailto:email@example.com" target="_blank" rel="noopener">email@example.com</a>“ 生成密钥，包含：公钥和私钥，公钥和私钥文件名相同，可以在命令执行过程中设置，公钥以pub为扩展名。<br><br>命令执行过程中会提示：”Enter file in which to save the key(xxx/id_rsa):”，直接回车的话就会生成id_rsa和id_rsa.pub，一般只需要默认按回车键即可。但是如果想区分的话，可以指定自定义的名字。比如可以为github生成名为id_rsa_github的密钥，可以为开源中国创建名为id_rsa_open的密钥。</p>
-<h2 id="拷贝公钥"><a href="#拷贝公钥" class="headerlink" title="拷贝公钥"></a>拷贝公钥</h2><p>将id_ras_xxx.pub中的内容拷贝到代码托管网站上，添加到ssh key中。</p>
-<h2 id="配置项目远程仓库地址"><a href="#配置项目远程仓库地址" class="headerlink" title="配置项目远程仓库地址"></a>配置项目远程仓库地址</h2><p>在项目的本地仓库中.git文件夹下找到配置文件config，需将http格式的git地址修改成git@格式的地址。<br><br>配置项为：remote.orgin.url。<br></p>
-<h2 id="配置多网站免密"><a href="#配置多网站免密" class="headerlink" title="配置多网站免密"></a>配置多网站免密</h2><p>如果只使用一个代码托管网站，比如github，那么无需此配置。但是如果是需要使用多个呢，那么就需要做特殊配置。<br><br>在本地的.ssh目录下的配置文件config中进行配置，配置内容如下：</p>
-<pre><code># 配置github.com
-Host github.com                 
-    HostName github.com
-    IdentityFile C:\\Users\\xxx\\.ssh\\id_rsa_github
-    PreferredAuthentications publickey
-    User gloryofme
-Host xxxxxx                 
-    HostName xxxxxx
-    IdentityFile C:\\Users\\xxx\\.ssh\\id_rsa_source
-    PreferredAuthentications publickey
-    User xxx</code></pre><p>主要配置说明：</p>
-<ol>
-<li>Host： 网站自定义别名</li>
-<li>HostName： 网站的域名 </li>
-<li>IdentityFile： 对应密钥文件地址</li>
-</ol>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/12/10/2017-12-10-git-ssh-key-config/" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -645,7 +600,7 @@ Host xxxxxx
               <img class="site-author-image" itemprop="image" src="/images/avatar.gif" alt="gloryfome">
             
               <p class="site-author-name" itemprop="name">gloryfome</p>
-              <p class="site-description motion-element" itemprop="description">description</p>
+              <p class="site-description motion-element" itemprop="description">BUPT|JD|</p>
           </div>
 
           <nav class="site-state motion-element">
