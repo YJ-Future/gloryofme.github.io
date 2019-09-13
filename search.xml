@@ -1,23 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[My New Post]]></title>
-    <url>%2F2019%2F09%2F12%2FMy-New-Post%2F</url>
-    <content type="text"><![CDATA[test]]></content>
-      <categories>
-        <category>测试</category>
-      </categories>
-      <tags>
-        <tag>test</tag>
-        <tag>tag</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Hello World]]></title>
-    <url>%2F2019%2F09%2F12%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
-  </entry>
-  <entry>
     <title><![CDATA[git全局和局部用户信息配置]]></title>
     <url>%2F2017%2F12%2F11%2F2017-12-11-git-user-config%2F</url>
     <content type="text"><![CDATA[必要性如果你的电脑上项目代码是从多个不同的代码托管网站上clone下来的，并且对应的用户名和邮箱信息不是都一样的，那么你就可以通过为你不同的项目配置不同的用户信息，保证push代码的用户信息是正确的。 配置方法我们可以为每一个项目都单独配置一下用户信息，但是往往你的电脑上大部分项目都是从一个代码托管网站上clone下来的，比如公司的项目，只有部分项目是从其他的网站上clone的，比如github，那么我们可以配置全局和局部的用户信息。 全局配置用户信息配置查看命令：git config –list，包含全局和局部配置。 全局配置用户信息命令：git config –global 具体例子如下： git config --global user.name &quot;xxxx&quot; git config --global user.email &quot;xxxx&quot;全局配置文件的路径：win7 -&gt; C：/Users/xxxxxx/.gitconfig配置文件内容例子如下： [user] name = xxxx email = xxxx@xx.com [core] excludesfile = C:\\Users\\xxxx\\Documents\\gitignore_global.txt局部配置局部配置用户信息命令：git config 具体例子如下： git config user.name &quot;xxxx&quot; git config user.email &quot;xxxx&quot;局部配置文件的路径：项目根目录下的.git文件夹下，例如：xxx/.git/config配置文件内容例子如下： [core] repositoryformatversion = 0 filemode = false bare = false logallrefupdates = true symlinks = false ignorecase = true hideDotFiles = dotGitOnly [remote &quot;origin&quot;] url = git@github.com:gloryofme/gloryofme.github.io.git fetch = +refs/heads/*:refs/remotes/origin/* [branch &quot;master&quot;] remote = origin merge = refs/heads/master [user] name = gloryofme email = gloryofme@163.com]]></content>
