@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[hexo 常用命令]]></title>
     <url>%2F2018%2F01%2F01%2F2018-01-01-hexo-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%2F</url>
-    <content type="text"><![CDATA[新建文章命令： hexo new &quot;title name&quot;示例： hexo new &quot;hexo 常用命令&quot; 生成静态文件命令： hexo generate 或者 hexo g 部署命令： hexo deploy 或者 hexo d 启动服务器命令： hexo server 或者 hexo s]]></content>
+    <content type="text"><![CDATA[新建文章命令： hexo new &quot;title name&quot;示例： hexo new &quot;hexo 常用命令&quot; 生成静态文件命令： hexo generate 或者 hexo g 部署命令： hexo deploy 或者 hexo d实例： 部署之前预生成静态文件 hexo d -g 启动服务器命令： hexo server 或者 hexo s]]></content>
       <tags>
         <tag>hexo</tag>
       </tags>
