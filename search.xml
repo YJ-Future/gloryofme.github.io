@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[学习线路计划]]></title>
     <url>%2F2018%2F02%2F19%2F%E5%AD%A6%E4%B9%A0%E7%BA%BF%E8%B7%AF%E8%AE%A1%E5%88%92%2F</url>
-    <content type="text"><![CDATA[想学的东西有很多，越来觉得底层基础知识和数据结构决定了自己的上限。 底层基础： 计算机组成原理 操作系统 计算机网络 编译原理 语言&amp;框架： jvm tomcat spring spring-boot bubbo kafka sharing-sphere redis netty disruptor https://github.com/LMAX-Exchange/disruptor/wiki 算法数据结构]]></content>
+    <content type="text"><![CDATA[想学的东西有很多，越来觉得底层基础知识和数据结构算法决定了自己的上限。底层基础： 计算机组成原理 操作系统 计算机网络 编译原理 语言&amp;框架： jvm tomcat spring spring-boot bubbo kafka sharing-sphere redis netty disruptor https://github.com/LMAX-Exchange/disruptor/wiki 算法数据结构]]></content>
       <tags>
         <tag>规划</tag>
       </tags>
